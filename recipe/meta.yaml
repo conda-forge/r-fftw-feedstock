@@ -1,4 +1,4 @@
-{% set version = "1.0-6.1" %}
+{% set version = "1.0-7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fftw_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fftw/fftw_{{ version }}.tar.gz
-  sha256: ffc32b4f9725c9b11cab692e2bba1f0f73cb067b443a0e629905f19031ca26e8
+  sha256: f69f63467b84e107f3e0b18d1f034a37140545e6f50e6be3b887df2b4eec3a1e
 
 build:
   merge_build_host: true  # [win]
