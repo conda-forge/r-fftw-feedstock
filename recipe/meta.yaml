@@ -1,4 +1,4 @@
-{% set version = "1.0-8" %}
+{% set version = "1.0-9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fftw_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fftw/fftw_{{ version }}.tar.gz
-  sha256: 8c7e011666a0ed76e0554abfa62cf658c055bd6efebe94d16b4462d123d08620
+  sha256: 3ef4d87c17031d14ca071ec8ab4d052f3fcb2c1132544ccb192344e5a047f698
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
